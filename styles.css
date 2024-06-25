@@ -67,3 +67,14 @@ body {
     font-weight: bold;
     text-align: right;
 }
+
+
+@media (width <= 600px) {
+  .poll-table {
+    width: 100%;
+    margin: 0;
+    }
+    .image {
+        width: 22%;
+    }
+}
