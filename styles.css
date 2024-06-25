@@ -69,7 +69,7 @@ body {
 }
 
 
-@media (width <= 600px) {
+@media (width <= 1000px) {
   .poll-table {
     width: 100%;
     margin: 0;
