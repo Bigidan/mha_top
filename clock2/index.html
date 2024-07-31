@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перевірка знання аналогового годинника</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body class="dark">
+<div class="container">
+    <div class="clock">
+        <label style="--i: 1"><span>.</span></label>
+        <label style="--i: 2"><span>.</span></label>
+        <label style="--i: 3"><span>3</span></label>
+        <label style="--i: 4"><span>.</span></label>
+        <label style="--i: 5"><span>.</span></label>
+        <label style="--i: 6"><span>6</span></label>
+        <label style="--i: 7"><span>.</span></label>
+        <label style="--i: 8"><span>.</span></label>
+        <label style="--i: 9"><span>9</span></label>
+        <label style="--i: 10"><span>.</span></label>
+        <label style="--i: 11"><span>.</span></label>
+        <label style="--i: 12"><span>12</span></label>
+        <div class="indicator">
+            <span class="hand hour"></span>
+            <span class="hand minute"></span>
+            <span class="hand second"></span>
+        </div>
+    </div>
+    <div class="input-container">
+        <input id="hour-input"
+               placeholder="Години"
+               class="mode-switch-input">
+        <input id="minute-input"
+               placeholder="Хвилини"
+               class="mode-switch-input">
+        <br>
+        <div onclick="checkTime()" class="mode-switch">Перевірити</div>
+        <div onclick="spinClock()" class="mode-switch">Запустити годинник</div>
+        <p id="result" style="opacity: 0;">Неправильно. Правильний час: ${correctHour} годин і ${correctMinute} хвилин.</p>
+    </div>
+    <div id="current-time"></div>
+</div>
+</body>
+</html>
